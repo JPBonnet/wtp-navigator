@@ -34,6 +34,7 @@ jest.mock('resend', () => jest.fn(() => mockResend));
 jest.mock('@/lib/supabase/client', () => ({
   supabase: { auth: mockSupabaseAuth },
 }));
+jest.mock('@/lib/db', () => ({ db: mockDb }));
 
 // ─── Network Failures ────────────────────────────────────────────
 

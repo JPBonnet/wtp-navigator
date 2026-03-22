@@ -5,10 +5,12 @@
  * shared across all test suites.
  */
 
+import { registerUserEmail } from '@/lib/email/user-store';
+
 // ─── Mock Factories ───────────────────────────────────────────────
 
 export function createMockUser(overrides: Record<string, unknown> = {}) {
-  return {
+  const user = {
     id: 'user_test_001',
     email: 'jan@example.nl',
     organizationId: 'org_test_001',
@@ -16,6 +18,8 @@ export function createMockUser(overrides: Record<string, unknown> = {}) {
     createdAt: new Date('2026-01-15T10:00:00Z'),
     ...overrides,
   };
+  registerUserEmail(user.id as string, user.email as string);
+  return user;
 }
 
 export function createMockAssessmentResult(overrides: Record<string, unknown> = {}) {

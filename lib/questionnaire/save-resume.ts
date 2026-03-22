@@ -5,6 +5,8 @@
  * Supports saving partial responses and resuming later.
  */
 
+import { db } from '@/lib/db';
+
 interface SavedAssessment {
   assessmentId: string;
   responses: Record<string, string>;
@@ -14,23 +16,14 @@ interface SavedAssessment {
 
 const EXPECTED_FIELDS = [
   'company_name',
-  'employee_count',
   'scheme_type',
-  'current_provider',
+  'provider_name',
   'participant_count',
-  'migration_timeline',
-  'key_concerns',
-  'specific_needs',
-  'budget_range',
-  'previous_experience',
-  'communication_preference',
-  'decision_makers',
-  'timeline_constraints',
-  'other_requirements',
-  'contact_email',
+  'contribution_employer',
+  'contribution_employee',
+  'has_communication_plan',
+  'effective_date',
 ];
-
-const store = new Map<string, SavedAssessment>();
 
 export async function saveAssessmentProgress(
   assessmentId: string,
@@ -58,7 +51,14 @@ export async function saveAssessmentProgress(
     completionPercentage,
   };
 
-  store.set(assessmentId, saved);
+  await db.save('assessment_progress', {
+    id: assessmentId,
+    assessmentId,
+    responses: responses as unknown as Record<string, unknown>,
+    lastModified: saved.lastModified,
+    completionPercentage,
+  });
+
   return saved;
 }
 
@@ -68,5 +68,14 @@ export async function resumeAssessment(
   if (!assessmentId) {
     throw new Error('assessmentId is required');
   }
-  return store.get(assessmentId) ?? null;
+
+  const data = await db.get('assessment_progress', assessmentId);
+  if (!data) return null;
+
+  return {
+    assessmentId: data.assessmentId as string,
+    responses: data.responses as unknown as Record<string, string>,
+    lastModified: data.lastModified as Date,
+    completionPercentage: data.completionPercentage as number,
+  };
 }

@@ -74,10 +74,8 @@ export async function sendPaymentConfirmation(
   });
 }
 
-function getUserEmail(userId: string): string {
-  // In production, resolve user email from database
-  return userId;
-}
+import { getUserEmail } from './user-store';
+export { registerUserEmail } from './user-store';
 
 function buildAssessmentEmailHTML(result: AssessmentResult): string {
   const gapRows = result.gaps

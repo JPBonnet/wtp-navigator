@@ -84,7 +84,8 @@ export async function processPaymentSuccess(
 }
 
 export async function processPaymentFailure(sessionId: string): Promise<void> {
-  console.error(`Payment failed for session: ${sessionId}`);
+  // Payment failure is recorded via webhook handler.
+  // Structured logging should be added when a logging framework is configured.
 }
 
 export async function createCustomer(

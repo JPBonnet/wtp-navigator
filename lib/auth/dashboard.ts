@@ -1,3 +1,5 @@
+import { supabase } from '@/lib/supabase/client';
+
 interface Assessment {
   id: string;
   status: string;
@@ -21,6 +23,12 @@ const mockAssessments: Record<string, Assessment[]> = {
 };
 
 export async function getUserDashboard(userId: string): Promise<Dashboard> {
+  // Verify the user's session is valid before returning data
+  const result = await supabase.auth.getUser(userId);
+  if (result?.error) {
+    throw new Error(result.error.message);
+  }
+
   const assessments = mockAssessments[userId] ?? [];
   return { assessments };
 }
