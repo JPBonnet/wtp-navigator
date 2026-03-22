@@ -78,13 +78,19 @@ export const mockDb = {
     mockStore[`${table}:${id}`] = { ...data, id };
     return { ...data, id };
   }),
-  get: jest.fn(async (table: string, id: string) => {
+  get: jest.fn(async (table: string, id: string): Promise<Record<string, unknown> | null> => {
     return mockStore[`${table}:${id}`] || null;
   }),
   reset: () => {
     Object.keys(mockStore).forEach((key) => delete mockStore[key]);
-    mockDb.save.mockClear();
-    mockDb.get.mockClear();
+    mockDb.save.mockReset().mockImplementation(async (table: string, data: Record<string, unknown>) => {
+      const id = data.id || `${table}_${Date.now()}`;
+      mockStore[`${table}:${id}`] = { ...data, id };
+      return { ...data, id };
+    });
+    mockDb.get.mockReset().mockImplementation(async (table: string, id: string): Promise<Record<string, unknown> | null> => {
+      return mockStore[`${table}:${id}`] || null;
+    });
   },
 };
 
