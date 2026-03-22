@@ -52,6 +52,10 @@ jest.mock('resend', () => jest.fn(() => mockResend));
 jest.mock('@/lib/supabase/client', () => ({
   supabase: { auth: mockSupabaseAuth },
 }));
+jest.mock('@/lib/db', () => {
+  const { mockDb } = require('./setup');
+  return { db: mockDb };
+});
 
 // ─── Request/Response Helpers ────────────────────────────────────
 
@@ -179,6 +183,11 @@ describe('POST /api/assessments/[id]/responses', () => {
       error: null,
     });
 
+    mockDb.get.mockResolvedValue({
+      id: 'assess_test_001',
+      organizationId: 'org_test_001',
+    });
+
     const res = createMockResponse();
     await handleSaveResponses(req as any, res as any);
 
@@ -216,6 +225,11 @@ describe('POST /api/assessments/[id]/responses', () => {
     mockSupabaseAuth.getUser.mockResolvedValue({
       data: { user: createMockUser({ organizationId: 'org_different' }) },
       error: null,
+    });
+
+    mockDb.get.mockResolvedValue({
+      id: 'assess_other_org',
+      organizationId: 'org_test_001',
     });
 
     const res = createMockResponse();
