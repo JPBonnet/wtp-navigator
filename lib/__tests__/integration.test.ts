@@ -139,11 +139,11 @@ describe('AssessmentCompletionFlow', () => {
     // Step 2: User leaves and resumes later
     const resumed = await resumeAssessment(assessmentId);
     expect(resumed).not.toBeNull();
-    expect(resumed.responses.company_name).toBe('Pensioen Advies Utrecht BV');
+    expect(resumed!.responses.company_name).toBe('Pensioen Advies Utrecht BV');
 
     // Step 3: Complete remaining questions
     const fullResponses = {
-      ...resumed.responses,
+      ...resumed!.responses,
       participant_count: '320',
       contribution_employer: '14.5',
       contribution_employee: '5.0',
@@ -181,8 +181,9 @@ describe('AssessmentCompletionFlow', () => {
 
     // Resume and verify all data present
     const resumed = await resumeAssessment(assessmentId);
-    expect(resumed.responses.company_name).toBe('BouwBV');
-    expect(resumed.responses.scheme_type).toBe('cdc');
+    expect(resumed).not.toBeNull();
+    expect(resumed!.responses.company_name).toBe('BouwBV');
+    expect(resumed!.responses.scheme_type).toBe('cdc');
   });
 });
 

@@ -131,9 +131,9 @@ describe('UserDashboard', () => {
   test('returns assessment with downloadable report URL', async () => {
     const assessment = await getAssessment('assess_test_001');
 
-    expect(assessment).toBeDefined();
-    expect(assessment.reportUrl).toBeDefined();
-    expect(assessment.reportUrl).toContain('download');
+    expect(assessment).not.toBeNull();
+    expect(assessment!.reportUrl).toBeDefined();
+    expect(assessment!.reportUrl).toContain('download');
   });
 
   test('returns empty assessments array for user with no assessments', async () => {

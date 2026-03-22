@@ -25,11 +25,9 @@ export async function getUserDashboard(userId: string): Promise<Dashboard> {
   return { assessments };
 }
 
-export async function getAssessment(assessmentId: string): Promise<Assessment> {
-  return {
-    id: assessmentId,
-    status: 'completed',
-    score: 72,
-    reportUrl: `/reports/${assessmentId}/download`,
-  };
+export async function getAssessment(assessmentId: string): Promise<Assessment | null> {
+  // In production, RLS policies filter by user's organization.
+  // Returns null when the assessment is not found or not accessible.
+  const allAssessments = Object.values(mockAssessments).flat();
+  return allAssessments.find((a) => a.id === assessmentId) ?? null;
 }

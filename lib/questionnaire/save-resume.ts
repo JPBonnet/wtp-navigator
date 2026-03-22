@@ -36,6 +36,13 @@ export async function saveAssessmentProgress(
   assessmentId: string,
   responses: Record<string, string>,
 ): Promise<SavedAssessment> {
+  if (!assessmentId) {
+    throw new Error('assessmentId is required');
+  }
+  if (!responses || typeof responses !== 'object') {
+    throw new Error('responses must be a valid object');
+  }
+
   const filledCount = Object.keys(responses).filter(
     (key) => responses[key] != null && responses[key] !== '',
   ).length;
@@ -58,5 +65,8 @@ export async function saveAssessmentProgress(
 export async function resumeAssessment(
   assessmentId: string,
 ): Promise<SavedAssessment | null> {
+  if (!assessmentId) {
+    throw new Error('assessmentId is required');
+  }
   return store.get(assessmentId) ?? null;
 }

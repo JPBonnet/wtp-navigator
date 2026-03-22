@@ -177,8 +177,9 @@ describe('SaveAndResume', () => {
     await saveAssessmentProgress(assessmentId, responses);
     const resumed = await resumeAssessment(assessmentId);
 
-    expect(resumed.assessmentId).toBe(assessmentId);
-    expect(resumed.responses).toEqual(responses);
+    expect(resumed).not.toBeNull();
+    expect(resumed!.assessmentId).toBe(assessmentId);
+    expect(resumed!.responses).toEqual(responses);
   });
 
   test('calculates completion percentage for partial responses', async () => {

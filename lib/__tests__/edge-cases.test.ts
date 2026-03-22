@@ -247,7 +247,8 @@ describe('ConcurrentSubmissions', () => {
 
     // Resume should return one of the two versions
     const resumed = await resumeAssessment(assessmentId);
-    expect(['VersionA', 'VersionB']).toContain(resumed.responses.company_name);
+    expect(resumed).not.toBeNull();
+    expect(['VersionA', 'VersionB']).toContain(resumed!.responses.company_name);
   });
 });
 
@@ -374,7 +375,7 @@ describe('RapidAPICalls', () => {
     const resumed = await resumeAssessment(assessmentId);
     expect(resumed).not.toBeNull();
     // Last save should win
-    expect(resumed.responses.iteration).toBe('9');
+    expect(resumed!.responses.iteration).toBe('9');
   });
 
   test('handles 5 concurrent checkout session creations', async () => {
