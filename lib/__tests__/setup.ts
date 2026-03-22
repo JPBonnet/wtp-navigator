@@ -117,9 +117,14 @@ export const mockSupabaseAuth = {
 
 // ─── Test Helpers ─────────────────────────────────────────────────
 
+import { resetPurchaseStore } from '@/lib/payments/purchase-verification';
+import { resetWebhookState } from '@/lib/payments/webhook-handler';
+
 /** Reset all mocks between tests */
 export function resetAllMocks() {
   mockDb.reset();
+  resetPurchaseStore();
+  resetWebhookState();
   jest.clearAllMocks();
 }
 
