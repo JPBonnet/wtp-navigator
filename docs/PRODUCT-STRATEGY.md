@@ -1,9 +1,15 @@
 # Wtp Navigator — Product Strategy
 
-**Document version:** 1.0
-**Last updated:** March 2026
+**Document version:** 1.1
+**Last updated:** 30 May 2026
 **Status:** Active
 **Owner:** Product & Strategy Team
+
+> **Revalidated 30 May 2026.** Market, regulatory and competitive claims in this document have
+> been checked against external sources. The defining customer decision is **eerbiedigende
+> werking vs. flat premium + compensation** (not "invaren," which is a pension-*fund* mechanism
+> and does not apply to the insured schemes we target). See
+> [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
 
 ---
 
@@ -51,14 +57,19 @@ This transition affects every employer in the Netherlands that participates in a
 
 The term "pensioen-APK" (pension MOT test, by analogy with the vehicle roadworthiness inspection) has become common shorthand for the assessment every employer must undertake to evaluate their current pension arrangement against the new legal requirements. This assessment must be completed well in advance of the 1 January 2028 transition deadline to allow sufficient time for implementation.
 
-Key regulatory milestones include:
+Key regulatory milestones (the implementation deadline was **extended by one year, from
+1 January 2027 to 1 January 2028** — Tweede Kamer 20 May 2025, Eerste Kamer 2 December 2025;
+the dates now sit in an AMvB and can be moved again). For the employers we target — those with
+a scheme at an **insurer or PPI** — the relevant calendar is:
 
 - **1 July 2023:** Wtp entered into force.
-- **1 January 2025:** Pension funds must have submitted their transition plans to De Nederlandsche Bank (DNB).
-- **1 January 2027:** Recommended completion date for employer-level implementation decisions.
-- **1 January 2028:** All pension schemes must operate under the new framework.
+- **~1 July 2026:** Recommended **start** of the adjustment process (the labour-conditions
+  track typically takes many months). This window is opening now.
+- **1 October 2027:** Deadline to submit the signed offer + transition plan (*transitieplan*)
+  to the insurer / PPI.
+- **1 January 2028:** All schemes must operate under the new framework.
 
-The window for employers to act is narrowing. Employers who delay risk non-compliance, which can result in regulatory sanctions, liability toward employees, and reputational damage.
+The window for employers to act is narrowing. Employers who delay risk non-compliance, which can result in regulatory sanctions, liability toward employees, and reputational damage. The principal counter-risk is a **further extension via the AMvB**, which would soften urgency (see §12).
 
 ### 2.3 MKB Pain Points
 
@@ -92,13 +103,21 @@ Wtp Navigator targets Dutch SMBs (MKB-bedrijven) with the following characterist
 
 ### 3.2 Market Size
 
-The Dutch market contains approximately 300,000 SMBs (MKB). Of these:
+Industry data gives a well-evidenced anchor: insurers and PPIs administer pension schemes for
+**~1.5 million employees across ~65,000 companies**, of which **~50,000 insured schemes must be
+adapted** for the Wtp (source: Verbond van Verzekeraars — see [SOURCES.md](./SOURCES.md)).
 
-- Approximately 150,000 have employees participating in occupational pension schemes.
-- An estimated 30,000–50,000 have insured pension arrangements (as opposed to mandatory industry fund participation with limited employer discretion).
-- Of these, approximately 5,000–10,000 fall within the 10–250 employee range where the transition requires active employer involvement but where internal expertise is limited.
+- These ~65,000 employers are the addressable universe (employers with discretion over an
+  insured scheme — as opposed to mandatory industry-fund participation with little employer
+  choice). The **large majority are SMBs**.
+- Precise counts in the 10–250-employee band are not published, but it is the dominant share
+  of the insured-scheme population, so the realistic target pool is **substantially larger than
+  earlier drafts assumed** (which estimated 30,000–50,000 arrangements and 5,000–10,000 SMBs).
 
-Our serviceable addressable market (SAM) is **1,000–5,000 businesses** — those that need guided support, can afford a digital solution, and are not already locked into advisory engagements with traditional consultants.
+Our serviceable addressable market (SAM) is the subset that needs guided support, can self-serve
+a digital solution, and is not already locked into a full advisory engagement — realistically
+on the order of **5,000–15,000 businesses**. The binding constraint on capture is **reachability
+and the Wft advice requirement** (§12), not the size of the pool.
 
 ### 3.3 Market Timing
 
@@ -281,22 +300,30 @@ While the Wtp transition is a time-bound event, the platform creates optionality
 
 | Competitor | Type | Strengths | Weaknesses |
 |---|---|---|---|
-| **Traditional pension consultants** (Aon, WTW, Mercer) | Advisory firms | Deep expertise, established relationships, brand trust | Expensive (€5K–€25K+), capacity-constrained, not designed for SMBs |
-| **Insurer-provided transition tools** | Embedded tools | Free to policyholders, integrated with existing arrangements | Limited to the insurer's own products, not independent, minimal compliance guidance |
-| **DoNotPay-style legal tech** | Digital legal platforms | Low cost, technology-first, consumer-friendly UX | No pension-specific offering in the Netherlands, no regulatory depth for Wtp |
-| **Accountants and boekhouders** | Generalist advisors | Existing trusted relationship with SMB clients | Pension is outside core competency, liability concerns, limited capacity |
-| **DIY (government/pension fund guidance)** | Free resources | No cost, authoritative source | Fragmented, not actionable, requires significant self-interpretation |
+| **Wft-licensed pension advisers** (Aon, Mercer, WTW, Montae, Sprenkels, plus thousands of local Adfiz members) | Regulated advisory | Deep expertise, *can give the regulated advice we cannot*, run the labour-conditions track, insurer relationships | Expensive (€5K–€25K+), capacity-constrained, not designed for SMB self-serve |
+| **Insurer-/PPI-provided guidance** (a.s.r., Nationale-Nederlanden, Zwitserleven, Centraal Beheer) | Embedded tools + adviser networks | Free to policyholders, integrated, drive the required signed offer | Tied to the insurer's own products, not independent |
+| **Specialised Wtp platforms — incl. `Pensioennavigator.nl`** | Direct competitors | Already model premium/compensation effects, draft plans & agreements; near-identical name | Direct overlap with our scope; **a brand-collision risk for us** (see §12) |
+| **Free official resources** (`werkenaanonspensioen.nl`; Adfiz/Verbond transitieplan templates) | Free, authoritative | No cost, trusted, erode our "we draft the documents" value prop | Informational, not a guided end-to-end workflow |
+| **Accountants and boekhouders** | Generalist advisors | Existing trusted SMB relationship | Pension is outside core competency; usually refer out |
 
 ### 9.2 Competitive Positioning
 
 Wtp Navigator occupies a distinct position in the market:
 
-- **More affordable than consultants** — 10–20x lower cost.
-- **More comprehensive than insurer tools** — independent, covering the full transition process rather than a single product switch.
-- **More specialised than legal tech platforms** — purpose-built for the Dutch pension transition, with deep regulatory integration.
-- **More structured than DIY** — transforms scattered guidance into a guided, step-by-step workflow.
+- **More affordable to start than a full adviser engagement** — a low-cost way to get
+  decision-ready before (or alongside) engaging a Wft adviser.
+- **Independent of any single insurer** — covers the orientation and decision process rather
+  than steering toward one provider's product.
+- **More structured than DIY / free templates** — turns scattered official guidance and the
+  Adfiz/Verbond templates into a guided, step-by-step workflow.
+- **Complements rather than competes with the adviser** — it packages a clean handoff (and an
+  optional expert-review path) instead of pretending to deliver regulated advice.
 
-The primary competitive risk is not a direct competitor but rather **market inertia** — businesses that delay action until it is too late for a self-service tool and are forced into emergency consultancy engagements, or businesses that incorrectly believe their pension fund or insurer will handle everything without employer involvement.
+The real competitive risks are concrete, not just "market inertia": (1) a **near-namesake
+direct competitor**, `Pensioennavigator.nl`, already in this space; (2) the **Wft advice
+requirement**, which means we must position as triage/augmentation + handoff rather than
+consultant replacement; and (3) **free official resources and insurer-provided guidance** that
+many employers will use by default. See §12.
 
 ---
 
@@ -358,7 +385,7 @@ For larger SMBs (100+ employees), a **consultative sales motion** may be warrant
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Deadline extension (1 January 2028 pushed back) | Reduces urgency; extends commercial window but may slow adoption | Monitor political signals; extend commercial window accordingly; position as "be ready early" |
+| Further deadline extension (the 2027→2028 extension already happened, and dates now live in an AMvB the government can move again) | Reduces urgency; extends the window but slows adoption | Monitor the AMvB and DNB/SZW signals (see [SOURCES.md](./SOURCES.md)); lead with the *insured-scheme* milestones (start ~Jul 2026, insurer submission 1 Oct 2027) rather than the soft 2028 end date; position as "be ready early" |
 | Regulatory changes during transition | Platform guidance becomes outdated | Dedicated regulatory monitoring; automated update pipeline; advisory board with pension law expertise |
 | Supervisory enforcement approach unclear | Businesses may not take compliance seriously | Track DNB/AFM communications; incorporate enforcement signals into urgency messaging |
 
@@ -370,6 +397,8 @@ For larger SMBs (100+ employees), a **consultative sales motion** may be warrant
 | "Good enough" insurer tools | Businesses use free insurer tools instead | Differentiate on independence, comprehensiveness, and compliance assurance |
 | Price sensitivity | €999 perceived as too high for a digital tool | Emphasise 10–20x savings vs. consultancy; offer free assessment preview to demonstrate value before purchase |
 | Competition from consultants lowering prices | Margin pressure | Maintain cost advantage through automation; focus on segments underserved by consultants |
+| **Brand collision with `Pensioennavigator.nl`** (a live, directly-adjacent product) | SEO/trademark/confusion risk | Clear the name (trademark + domain search) before any brand spend; consider a distinct name |
+| **Wft advice requirement** — employers effectively need a licensed adviser; a self-serve tool cannot *be* the regulated advice | Caps the "replace the consultant" model | Reposition as triage/augmentation + handoff; make the Wft expert-review path and B2B2B adviser tooling core, not optional (see §12.4) |
 
 ### 12.3 Operational Risk
 

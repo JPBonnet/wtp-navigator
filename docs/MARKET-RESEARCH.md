@@ -2,6 +2,13 @@
 
 ## Dutch Pension Reform (Wtp) — Market Analysis for Wtp Navigator
 
+> **Revalidated 30 May 2026** against external sources. Two earlier errors were corrected:
+> (1) the target segment (insured schemes) does **not** undergo "invaren" — the defining choice
+> is **eerbiedigende werking vs. flat premium + compensation**; (2) the previously-listed
+> "DoNotPay" competitor was fabricated and has been replaced with the real landscape. Market
+> sizing is re-based on Verbond van Verzekeraars data. See
+> [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
+
 ---
 
 ## 1. The APK Pension Reform: Context & Background
@@ -10,24 +17,35 @@
 
 The Wet toekomst pensioenen (Wtp), or Future of Pensions Act, is the most significant overhaul of the Dutch pension system in decades. Enacted in July 2023, it fundamentally changes how workplace pensions operate in the Netherlands, moving from a defined benefit (DB) system to a defined contribution (DC) model.
 
-**Key Changes:**
-- All existing pension arrangements must be converted to one of two new DC contract types: the "solidarity arrangement" (solidaire regeling) or the "flexible arrangement" (flexibele regeling)
-- Employers must create a formal transition plan (transitieplan) documenting their choices and the impact on employees
-- Accrued pension rights must be "invaren" (converted) to the new system
-- Adequate compensation arrangements must be established for employees disadvantaged by the transition
-- Employee communication and consent processes must follow strict regulatory guidelines
+**Key Changes (for our target: employers with an *insured* scheme at an insurer or PPI):**
+- Future pension accrual moves to a **flat (age-independent) premium** (*vlakke premie*).
+  Schemes are placed in a premium agreement that fits the Wtp (for insured/PPI schemes,
+  typically the *flexibele premieovereenkomst*).
+- Employers must create a formal transition plan (*transitieplan*) documenting their choices
+  and the impact on employees.
+- The defining choice is **eerbiedigende werking** (keep existing employees on the current
+  age-progressive premium scale) **vs.** moving everyone to the flat premium with
+  **compensation** (*compensatie*) for disadvantaged (typically older) employees. Industry
+  expectation: ~80–85% of insured-scheme employers choose eerbiedigende werking.
+- **Note:** "invaren" — collective conversion of *accrued* rights — is a pension-**fund**
+  mechanism and **does not apply to insured schemes**; accrued insured benefits generally stay
+  where they are. (Earlier drafts wrongly listed invaren as a core SMB task.)
+- Employee communication and consent (instemming), plus OR/PVT consultation, must follow strict
+  regulatory guidelines.
 
 ### Timeline & Deadlines
 
-| Date | Milestone |
+The implementation deadline was **extended from 1 January 2027 to 1 January 2028** (Tweede
+Kamer 20 May 2025; Eerste Kamer confirmed 2 December 2025, wetsvoorstel 36.578). The transition
+dates now sit in an **AMvB**, so the government can move them again. For our target — employers
+with a scheme at an **insurer or PPI** — the relevant calendar is:
+
+| Date | Milestone (insured-scheme employers) |
 |------|-----------|
-| July 2023 | Wtp enacted into law |
-| January 2024 | Transition period begins |
-| January 2025 | Industry pension funds submit transition plans |
-| July 2025 | Large employers expected to have plans in progress |
-| January 2027 | Recommended deadline for SMBs to begin transition |
-| July 2027 | Final window for starting transitions |
-| **1 January 2028** | **Legal deadline: all transitions must be complete** |
+| 1 July 2023 | Wtp enacted into law |
+| **~1 July 2026** | Recommended **start** of the adjustment process (labour-conditions track takes months). *This window is opening now.* |
+| **1 October 2027** | Signed offer + transition plan (*transitieplan*) submitted to the insurer / PPI |
+| **1 January 2028** | Legal deadline: all schemes operate under the new framework |
 
 ### Why It Matters for SMBs
 
@@ -49,15 +67,18 @@ The Netherlands has approximately 400,000 active businesses. However, our target
 - Needs to actively manage their Wtp transition
 - Not already engaged with a consultant or has stalled
 
-**Market Sizing:**
+**Market Sizing (re-based on Verbond van Verzekeraars data — see [SOURCES.md](./SOURCES.md)):**
 
 | Segment | Companies | Relevance |
 |---------|-----------|-----------|
-| Total Dutch businesses | ~400,000 | Universe |
-| Businesses with 10–250 employees | ~60,000 | Size filter |
-| With own pension arrangements (not sector fund) | ~15,000–20,000 | Pension filter |
-| Not yet started transition or seeking alternatives | ~5,000–8,000 | Timing filter |
-| **Realistic serviceable market** | **1,000–5,000** | **Our target** |
+| Companies with a scheme at an insurer / PPI | **~65,000** | Addressable universe (~1.5M employees) |
+| Insured schemes that must be adapted for the Wtp | **~50,000** | Must-act filter |
+| SMB share (10–250 employees, limited internal expertise) | majority of the above | Our segment |
+| **Realistic serviceable market** | **5,000–15,000** | **Our target** |
+
+The binding constraint is **reachability and the Wft advice requirement** (§4), not pool size —
+the universe is larger and better-evidenced than earlier drafts (which estimated ~15,000–20,000
+arrangements and a 1,000–5,000 serviceable market).
 
 ### Serviceable Addressable Market (SAM)
 
@@ -142,20 +163,29 @@ SMB owners are skeptical of pension industry players:
 
 ## 4. Competitive Analysis
 
-### 4.1 DoNotPay Netherlands (Legal Tech Competitor)
+> **Correction:** earlier drafts named "DoNotPay" as a Dutch pension competitor. This was
+> fabricated — DoNotPay is a US consumer legal chatbot with **no Dutch pension product**, and
+> was sanctioned by the US FTC in 2025 (finalized order, $193k) for deceptive "AI lawyer"
+> claims. It has been removed and replaced with the real landscape below.
 
-**Profile:** AI-powered legal services platform expanding into pension compliance.
+### 4.1 Specialised Wtp platforms — incl. `Pensioennavigator.nl` (direct competitor)
 
-| Dimension | DoNotPay NL | Wtp Navigator |
+**Profile:** Dutch platforms purpose-built for the Wtp transition. The most directly relevant
+is **`Pensioennavigator.nl`**, which already lets employers model premium, pension and
+compensation effects and produces presentations, transition plans, agreements and choice
+guidance — i.e. substantially our intended scope. Others include `pensioentransitieplan.nl`.
+
+| Dimension | Pensioennavigator (& similar) | Wtp Navigator |
 |-----------|-------------|---------------|
-| Price | €200–€500 | €999 |
-| Depth | General legal templates | Pension-specialized |
-| Compliance verification | Basic | Comprehensive |
-| Migration planning | No | Yes |
-| Dutch market expertise | Limited | Deep |
-| Support | Automated only | Human + automated |
+| Focus | Dutch Wtp transition (direct overlap) | Dutch Wtp transition |
+| Pricing | Not publicly fixed | €999 self-serve + free tier |
+| Name | **Near-identical to ours** | **Brand-collision risk** |
+| Positioning | Modelling + plan/agreement generation | Triage + decision support + adviser handoff |
 
-**Assessment:** DoNotPay offers a lower price point but lacks the depth and specialization needed for Wtp compliance. Their general-purpose approach may work for simple cases but fails for companies with complex pension arrangements.
+**Assessment:** This is the clearest *direct* competitive signal that the need is real — and a
+**brand/SEO risk** given the name overlap. Differentiate on SMB-friendly triage, the
+eerbiedigende-werking-vs-compensation decision flow, and clean Wft-adviser handoff; clear the
+name before brand spend.
 
 ### 4.2 Traditional Pension Consultants
 
@@ -329,10 +359,13 @@ SMB owners are skeptical of pension industry players:
 - Communication must be in clear, understandable language (not legal jargon)
 
 **Pension Provider Coordination:**
-- Current pension provider must be notified of transition intentions
-- New contract terms must be negotiated and agreed upon
-- "Invaren" (conversion of existing rights) requires provider cooperation
-- Timeline must account for provider processing time (typically 3–6 months)
+- Current insurer / PPI must be notified of transition intentions
+- New contract terms (flat-premium agreement) must be negotiated and a **signed offer**
+  obtained — this typically requires a **Wft-licensed adviser**
+- Accrued insured benefits generally stay with the existing contract (no "invaren" for insured
+  schemes — that is a pension-*fund* mechanism)
+- Timeline must account for provider processing time (the labour-conditions track alone takes
+  many months; submission to the insurer/PPI is due by 1 October 2027)
 
 ### Regulatory Risks
 
@@ -342,7 +375,7 @@ SMB owners are skeptical of pension industry players:
 | Inadequate employee communication | AFM enforcement action | Medium |
 | Unfair compensation arrangements | Employee legal claims | Medium |
 | Missed deadline | Regulatory action, continued old-system costs | High for procrastinators |
-| Incorrect "invaren" calculations | Financial losses, legal liability | Low with proper tools |
+| Incorrect compensation / flat-premium calculations | Financial losses, legal liability | Mitigated by routing final figures to a Wft adviser |
 
 ---
 
@@ -402,6 +435,13 @@ Demand
 5. **Timing is everything.** Launch too early, and the market isn't ready. Launch too late, and the window closes. Q3 2026 is the optimal launch window.
 
 6. **Post-deadline opportunity exists.** Even after 1 January 2028, there will be companies that need remediation, compliance verification, and ongoing monitoring.
+
+7. **The advice requirement reshapes the model.** Insured-scheme transitions effectively
+   require a **Wft-licensed adviser**, and the signed insurer offer is a regulated step. The
+   defensible position is **triage + decision support + clean adviser handoff** (and/or B2B2B
+   tooling for advisers), not full consultant replacement. The €999 self-serve tier fits the
+   orientation job; regulated advice is routed, not impersonated. See
+   [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) A9.
 
 ---
 

@@ -2,6 +2,9 @@
 
 ## Wtp Navigator — Comprehensive Business Plan
 
+> **Last updated:** 30 May 2026
+> **Note:** Revalidated 30 May 2026. Canonical facts (deadline, domain model, competitors, market sizing) live in [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
+
 ---
 
 ## 1. Executive Summary
@@ -10,9 +13,9 @@ Wtp Navigator is a B2B SaaS platform that helps Dutch small and medium-sized bus
 
 **The Problem:** Dutch SMBs face a complex, high-stakes regulatory deadline. Traditional pension consultants charge €5,000–€25,000, pricing out the majority of the market. Most SMBs are procrastinating because they can't afford professional help and don't have the expertise to DIY.
 
-**The Solution:** Wtp Navigator delivers consultant-quality pension transition guidance through an intelligent, self-service platform — for a one-time fee of €999. Our assessment engine analyzes a company's current pension arrangement, identifies compliance gaps, generates a migration plan, and produces the required documentation.
+**The Solution:** Wtp Navigator helps Dutch SMBs get *decision-ready* on their pension transition through an intelligent, self-service platform — for a one-time fee of €999. Our assessment engine analyzes a company's current pension arrangement, surfaces the key decisions (notably eerbiedigende werking vs. flat premium with compensation), generates a migration plan, and produces the required documentation. A €999 self-service tool cannot lawfully *be* the regulated Wft advice that an insured-scheme transition requires; instead we augment that process — getting employers decision-ready and providing a clean handoff to a Wft-licensed adviser (and/or B2B2B tooling for those advisers).
 
-**The Opportunity:** 1,000–5,000 eligible SMBs represent a serviceable market of €1–5M. With 85%+ gross margins and a blended customer acquisition cost of €120–180, the unit economics are highly attractive.
+**The Opportunity:** Insurers/PPIs run schemes for ~1.5M employees at ~65,000 companies, with ~50,000 insured schemes to adapt — the large majority SMBs. A realistic serviceable market is ~5,000–15,000 employers. With 85%+ gross margins and a blended customer acquisition cost of €120–180, the unit economics are highly attractive.
 
 **Financial Summary:**
 
@@ -35,11 +38,11 @@ To be the definitive technology platform that Dutch businesses trust for pension
 
 ### Mission
 
-We empower Dutch SMBs to navigate pension reform with confidence by providing intelligent, affordable, and comprehensive transition tools that eliminate the need for expensive consultants.
+We empower Dutch SMBs to navigate pension reform with confidence by providing intelligent, affordable, and comprehensive tools that get them decision-ready for a fraction of a full advisory engagement — and hand off cleanly to a Wft-licensed adviser where regulated advice is required.
 
 ### Core Values
 
-1. **Accessibility:** Complex compliance should not require a €10,000 budget or a pension law degree
+1. **Accessibility:** Getting decision-ready should not require a €10,000 budget or a pension law degree (regulated Wft advice, where required, is handed off to a licensed adviser)
 2. **Clarity:** Every output we produce must be understandable by a non-specialist
 3. **Reliability:** Our compliance assessments must be accurate and legally sound
 4. **Urgency:** We respect the deadline our customers face and help them act decisively
@@ -65,9 +68,10 @@ Wtp Navigator is a web-based platform with four core modules:
 
 The heart of the product. Companies answer structured questions about their current pension arrangement, and our engine:
 
-- Analyzes their current pension type, contributions, and accrual structure
+- Analyzes their current pension type, contributions, and premium structure (age-progressive staffel vs. flat premium)
+- Surfaces the defining decision for insured schemes: eerbiedigende werking (keep existing employees on the current age-progressive premium scale) vs. moving to a flat (age-independent) premium with compensation (compensatie) for disadvantaged (typically older) employees — ~80–85% of insured-scheme employers are expected to choose eerbiedigende werking
 - Identifies which aspects need to change under the Wtp
-- Flags potential risks (e.g., employees close to retirement who may be disadvantaged)
+- Flags potential risks (e.g., older employees who may be disadvantaged by a move to flat premium and require compensation)
 - Generates a comprehensive compliance gap analysis
 
 **Key Feature:** The assessment adapts dynamically — questions are contextual based on previous answers, minimizing time investment while maximizing accuracy.
@@ -119,25 +123,27 @@ See [TECHNICAL-ARCHITECTURE.md](./TECHNICAL-ARCHITECTURE.md) for detailed techni
 
 ### The Wtp Reform
 
-The Wet toekomst pensioenen (Future of Pensions Act) mandates that every Dutch employer transition their pension arrangements to the new defined contribution system by 1 January 2028. This affects hundreds of thousands of companies, but our target market is the underserved SMB segment.
+The Wet toekomst pensioenen (Future of Pensions Act) mandates that every Dutch employer transition their pension arrangements to the new defined contribution system by 1 January 2028 (the deadline was extended from 1 Jan 2027; transition dates now sit in an AMvB and could be moved again). Our target market is the underserved SMB segment with an **insured** scheme (at an insurer or PPI) — not pension-fund participants. Note: "invaren" (collective conversion of accrued rights) is a pension-*fund* mechanism and does **not** apply to insured schemes; the defining customer decision is eerbiedigende werking vs. flat premium with compensation.
 
 ### Total Addressable Market (TAM)
 
+Evidenced anchor: insurers/PPIs run schemes for ~1.5M employees at ~65,000 companies, with ~50,000 insured schemes to adapt — the large majority SMBs.
+
 | Segment | Size | Value |
 |---------|------|-------|
-| All Dutch businesses needing Wtp transition | ~60,000 | €60M+ (at €999/each) |
-| SMBs with 10–250 employees | ~15,000–20,000 | €15–20M |
-| **Our serviceable market** | **1,000–5,000** | **€1–5M** |
+| Companies with an insured scheme (verzekeraar/PPI) | ~65,000 | — |
+| Insured schemes needing adaptation | ~50,000 | — |
+| **Our serviceable market** | **~5,000–15,000** | **€5–15M** |
 
-### Why 1,000–5,000?
+### Why ~5,000–15,000?
 
 Our serviceable market is constrained by:
-- Companies already using industry pension funds (sector-level transition, not our market)
-- Companies already engaged with consultants (hard to switch mid-process)
-- Companies with <10 employees (often use simplified pension products, lower urgency)
-- Companies with >250 employees (usually have in-house HR/pension expertise)
+- Companies in industry/sector pension funds (fund-level transition with invaren — not our market)
+- Companies already engaged with a Wft adviser (we can still augment / provide B2B2B tooling)
+- Companies with very few employees (often simplified products, lower urgency)
+- Companies large enough to have in-house HR/pension expertise
 
-The 1,000–5,000 range represents companies that need help, can't afford consultants, and are actively seeking alternatives.
+The ~5,000–15,000 range represents insured-scheme employers that need help getting decision-ready and are actively seeking affordable, advice-ready alternatives.
 
 ### Market Timing
 
@@ -465,7 +471,7 @@ The low break-even point is a key strength of this business model. With just 4�
 
 ## 12. Conclusion
 
-Wtp Navigator addresses a clear, time-bound market need with a capital-efficient, high-margin business model. The combination of regulatory urgency, an underserved market segment, and a 10x price advantage over alternatives creates a compelling business opportunity.
+Wtp Navigator addresses a clear, time-bound market need with a capital-efficient, high-margin business model. The combination of regulatory urgency, an underserved insured-scheme SMB segment, and a price point a fraction of a full advisory engagement (while augmenting — not replacing — regulated Wft advice) creates a compelling business opportunity. (Note: the deadline now sits in an AMvB and could move again, a real risk to urgency-driven demand.)
 
 The key success factors are:
 1. **Execution speed:** Launching in Q3 2026 captures the optimal market window
