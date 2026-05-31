@@ -2,6 +2,9 @@
 
 ## Wtp Navigator — Target Customer Profiles
 
+> **Last updated:** 30 May 2026
+> **Note:** Revalidated 30 May 2026. Canonical facts (deadline, domain model, competitors, market sizing) live in [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
+
 ---
 
 ## Overview
@@ -43,7 +46,7 @@ Eight months ago, Jan received a letter from his pension provider about the Wtp 
 
 1. **Cost shock:** €12,000 for a pension consultant is hard to justify when his annual profit margin is under €200K. "That's a new piece of equipment I could buy instead."
 
-2. **Complexity overwhelm:** Jan reads about "solidarity arrangements" vs. "flexible arrangements" and his eyes glaze over. He doesn't speak pension, and he resents having to learn it for a one-time regulatory exercise.
+2. **Complexity overwhelm:** Jan reads about keeping his current age-progressive premium scale (eerbiedigende werking) vs. moving to a flat premium with compensation for older employees, and his eyes glaze over. He doesn't speak pension, and he resents having to learn it for a one-time regulatory exercise.
 
 3. **Trust deficit:** Jan has been burned by advisors before — an insurance broker who oversold disability coverage, a consultant who charged €5,000 for a report that gathered dust. He's skeptical of anyone trying to sell him pension services.
 
@@ -69,15 +72,15 @@ Eight months ago, Jan received a letter from his pension provider about the Wtp 
 ### How Wtp Navigator Serves Jan
 
 - **Free audit** gives him immediate clarity without any commitment or cost
-- **€999 price** is 92% cheaper than the consultant quote — an obvious yes
+- **€999 price** gets him decision-ready for a fraction of the open-ended consultant quote — an obvious yes (regulated Wft advice, where required, is a clean handoff to a licensed adviser, not something the tool replaces)
 - **Plain language** throughout — no pension jargon, just clear instructions
 - **Self-service** model respects his independence and time constraints
-- **Document generation** gives him something concrete to share with employees
+- **Document generation** gives him something concrete to share with employees and to take into an adviser conversation
 
 ### Marketing Messages That Resonate with Jan
 
-- "Your pension consultant quoted €12,000. We charge €999. Same result."
-- "Complete your pension transition in one afternoon, not three months."
+- "Your pension consultant quoted €12,000 for an open-ended engagement. Get decision-ready for €999 — then walk in knowing exactly what you want."
+- "Get decision-ready on your pension transition in one afternoon, not three months."
 - "No pension expertise needed. If you can fill out a tax return, you can use Wtp Navigator."
 - "Your employees are asking about the pension changes. Now you can give them answers."
 
@@ -187,7 +190,7 @@ He reports quarterly to MediTech's board, and the pension transition is now a st
 
 4. **ROI justification:** As CFO, Pieter evaluates every expenditure on ROI. For pension transition tools, the ROI calculation is: total cost of our approach vs. total cost of alternatives, including hidden costs, delays, and risk.
 
-5. **Multi-scenario planning:** Pieter wants to model different scenarios — what if they choose the solidarity arrangement vs. the flexible arrangement? What if they invest more in compensation vs. less? He needs comparative analysis, not a single recommendation.
+5. **Multi-scenario planning:** Pieter wants to model different scenarios — what if they keep the current age-progressive premium scale (eerbiedigende werking) vs. move to a flat premium with compensation? What if they invest more in compensation vs. less? He needs comparative analysis, not a single recommendation. (Note: "invaren" — collective conversion of accrued rights — is a pension-*fund* mechanism and does not apply to MediTech's insured scheme; the defining decision is eerbiedigende werking vs. flat premium with compensation.)
 
 6. **Integration with financial systems:** Pieter wants pension transition data to flow into his financial planning. Exporting data to Excel is a minimum requirement. Ideally, the tool produces outputs compatible with his reporting framework.
 
@@ -210,7 +213,7 @@ He reports quarterly to MediTech's board, and the pension transition is now a st
 
 - **€999 fixed price** eliminates cost unpredictability — the total is known before purchase
 - **Financial impact modeling** shows exactly how different pension choices affect the P&L
-- **Scenario comparison** allows Pieter to evaluate solidarity vs. flexible arrangements with hard numbers
+- **Scenario comparison** allows Pieter to evaluate eerbiedigende werking vs. a flat premium with compensation using hard numbers
 - **Board-ready reports** with professional formatting and clear data visualizations
 - **Export capabilities** for integration with existing financial planning tools
 - **Cost comparison generator** that clearly demonstrates savings vs. consultant approach
@@ -220,7 +223,7 @@ He reports quarterly to MediTech's board, and the pension transition is now a st
 - "One price. No surprises. No 'additional fees TBD.' Just €999 for everything."
 - "See exactly how the pension transition affects your P&L — before you commit."
 - "Generate board-ready pension transition reports in minutes, not weeks."
-- "Your consultants quoted €18,000 with variable extras. We quote €999, fixed. Same compliance outcome."
+- "Your consultants quoted €18,000 with variable extras. Get decision-ready for a fixed €999 — then hand off cleanly to your Wft adviser for the regulated advice."
 
 ---
 

@@ -2,15 +2,18 @@
 
 ## Wtp Navigator — Launch & Growth Plan
 
+> **Last updated:** 30 May 2026
+> **Note:** Revalidated 30 May 2026. Canonical facts (deadline, domain model, competitors, market sizing) live in [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
+
 ---
 
 ## 1. Executive Overview
 
-Wtp Navigator enters the Dutch market at a critical inflection point: the mandatory pension reform (Wet toekomst pensioenen) requires every employer in the Netherlands to transition their pension arrangements before 1 January 2028. With an estimated 1,000–5,000 SMBs (10–250 employees) facing this complex, high-stakes compliance deadline, we have an 18-month window to capture significant market share with an affordable, technology-driven solution.
+Wtp Navigator enters the Dutch market at a critical inflection point: the mandatory pension reform (Wet toekomst pensioenen) requires every employer in the Netherlands to transition their pension arrangements before 1 January 2028 (the deadline was extended from 1 Jan 2027 and now sits in an AMvB that could move again). Our target is the insured-scheme SMB segment: insurers/PPIs run schemes for ~1.5M employees at ~65,000 companies (~50,000 insured schemes to adapt), of which a realistic serviceable market is ~5,000–15,000 employers. We have an 18-month window to capture significant share with an affordable, technology-driven solution that gets employers decision-ready ahead of (and alongside) regulated Wft advice.
 
 Our go-to-market strategy is designed to move fast, build trust, and scale efficiently. We will launch in Q3 2026 with a focused, channel-driven approach that targets HR directors and owner-directors at Dutch SMBs — the people who feel the pain of pension reform most acutely.
 
-**Core GTM Thesis:** By offering a €999 fixed-price alternative to €5,000–€25,000 consulting engagements, we remove the primary barrier to action for thousands of procrastinating SMBs. Our marketing must communicate urgency, simplicity, and credibility.
+**Core GTM Thesis:** By offering a €999 fixed-price tool that gets employers decision-ready for a fraction of a full €5,000–€25,000 advisory engagement, we remove the primary barrier to action for thousands of procrastinating SMBs — then hand off cleanly to a Wft-licensed adviser where regulated advice is required (and/or sell B2B2B tooling to those advisers). Our marketing must communicate urgency, simplicity, and credibility.
 
 ---
 
@@ -238,15 +241,15 @@ The free pension audit is the cornerstone of our sales funnel. It provides immed
 
 ### Primary Positioning Statement
 
-*"Wtp Navigator is the affordable, technology-driven pension transition platform that helps Dutch SMBs achieve Wtp compliance in weeks, not months — for a fraction of the cost of traditional consultants."*
+*"Wtp Navigator is the affordable, technology-driven platform that gets Dutch SMBs decision-ready for their Wtp pension transition in weeks, not months — for a fraction of a full advisory engagement, with a clean handoff to a Wft-licensed adviser where regulated advice is required."*
 
 ### Messaging by Persona
 
 **For Jan (Owner-Director, <50 employees):**
-- Lead message: "Stop overpaying consultants for something your business can handle with the right tool."
+- Lead message: "Get decision-ready on your pension transition for a fraction of a full advisory engagement — then walk into your adviser already knowing what you want."
 - Pain point addressed: Cost and frustration with opaque consulting fees
-- Proof point: "€999 vs. €10,000+ for the same outcome"
-- CTA: "Get your free pension audit in 5 minutes"
+- Proof point: "€999 to get decision-ready vs. €10,000+ open-ended engagements"
+- CTA: "Get your free pension check in 5 minutes"
 
 **For Sanne (HR Manager, 50–150 employees):**
 - Lead message: "Know exactly where you stand on Wtp compliance — and what to do next."
@@ -262,10 +265,10 @@ The free pension audit is the cornerstone of our sales funnel. It provides immed
 
 ### Key Messages (All Audiences)
 
-1. **Urgency:** "The Wtp deadline is 1 January 2028. Companies that start now finish stress-free. Companies that wait risk non-compliance."
-2. **Simplicity:** "Answer a few questions. Get a complete transition plan. No pension expertise required."
-3. **Affordability:** "90% cheaper than hiring a pension consultant. Same compliance outcome."
-4. **Trust:** "Built on official Wtp regulations. Verified against DNB and AFM requirements."
+1. **Urgency:** "The Wtp deadline is 1 January 2028. For an insured scheme, the practical calendar is: start ~July 2026, signed offer + transition plan to your insurer/PPI by 1 October 2027, live by 1 January 2028. Companies that start now finish stress-free."
+2. **Simplicity:** "Answer a few questions. Understand your key decision — keep the current premium scale (eerbiedigende werking) or move to a flat premium with compensation. No pension expertise required."
+3. **Affordability:** "Get decision-ready for a fraction of a full advisory engagement — then hand off cleanly to your Wft adviser."
+4. **Trust:** "Built on official Wtp regulations. Aligned with DNB and AFM requirements. We get you decision-ready; regulated advice stays with your licensed adviser."
 5. **Speed:** "Most companies complete their assessment in under 2 hours."
 
 ---

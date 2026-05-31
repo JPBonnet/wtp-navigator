@@ -1,15 +1,16 @@
 # Wtp Navigator — Implementation Roadmap
 
-> **Last updated:** March 2026
+> **Last updated:** 30 May 2026
 > **Target MVP launch:** End of May 2026
-> **Project type:** B2B SaaS — Pension Migration Compliance & Advisory Platform
+> **Project type:** B2B SaaS — Pension Transition Decision-Support Platform (augments regulated Wft advice)
 > **Author:** Jean-Pierre Bonnet (Founder / Solo Engineer)
+> **Note:** Revalidated 30 May 2026. Canonical facts (deadline, domain model, competitors, market sizing) live in [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
 
 ---
 
 ## Executive Summary
 
-Wtp Navigator is a software platform that helps Dutch employers navigate the transition to the new pension system mandated by the *Wet toekomst pensioenen* (Wtp). The tool provides automated compliance assessments, migration planning, and actionable reports — replacing expensive consultancy engagements (€5,000–€25,000) with a self-service product at €999 per assessment.
+Wtp Navigator is a software platform that helps Dutch employers (target: SMBs with an **insured** scheme at an insurer/PPI) navigate the transition to the new pension system mandated by the *Wet toekomst pensioenen* (Wtp). The tool provides automated decision-support assessments, migration planning, and actionable reports — getting employers decision-ready for a fraction of a full €5,000–€25,000 advisory engagement, with a clean handoff to a Wft-licensed adviser where regulated advice is required. A €999 self-service product cannot lawfully *be* the regulated Wft advice an insured-scheme transition requires; it augments that advice rather than replacing it.
 
 This roadmap defines four implementation phases spanning from initial development through post-launch growth, with concrete sprint plans, technical milestones, resource allocation, risk mitigation strategies, and financial projections. Every phase is scoped for a **single full-time engineer** with selective outsourcing for design and content.
 
@@ -917,6 +918,7 @@ This roadmap is a living document. Review and update at each phase gate:
 **Version history:**
 - v1.0 (March 2026) — Initial roadmap
 - v1.1 (March 22, 2026) — Refined with feasibility analysis, risk mitigation, tech stack rationale, monthly customer targets, success criteria per phase, emergency descoping guide
+- v1.2 (30 May 2026) — Revalidated against canonical facts: deadline confirmed 1 Jan 2028 (extended from 1 Jan 2027, now in an AMvB and movable), positioning softened to "augment, not replace" regulated Wft advice, insured-scheme target clarified. See [ASSUMPTIONS-VALIDATION.md](./ASSUMPTIONS-VALIDATION.md) and [SOURCES.md](./SOURCES.md).
 
 ---
 
